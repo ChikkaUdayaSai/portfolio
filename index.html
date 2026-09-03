@@ -155,6 +155,8 @@
     transform:translateY(-2px);
   }
   .section-sub{color:var(--text-muted);margin-top:8px;font-size:15px;max-width:600px;}
+  .section-sub a.inline-link{color:var(--teal);text-decoration:none;border-bottom:1px solid var(--teal-dim);}
+  .section-sub a.inline-link:hover{border-bottom-color:var(--teal);}
 
   /* ---------- About ---------- */
   .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:start;}
@@ -196,6 +198,25 @@
   .skill-block h3{font-size:14.5px;color:var(--coral);font-weight:600;margin-bottom:12px;}
   .skill-block .chips{gap:7px;}
   .skill-block .chip{font-family:'IBM Plex Sans',sans-serif;font-size:13px;color:var(--text-muted);}
+
+  /* ---------- Testimonials ---------- */
+  .quote-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  .quote-card{background:var(--bg);padding:28px 26px;display:flex;flex-direction:column;gap:14px;}
+  .quote-mark{
+    font-family:'Sora',sans-serif;font-size:34px;font-weight:700;
+    color:var(--teal);line-height:0.6;
+  }
+  .quote-text{color:var(--text);font-size:14.5px;line-height:1.65;font-style:italic;margin:0;}
+  .quote-who{display:flex;flex-direction:column;gap:2px;margin-top:auto;}
+  .quote-name{font-family:'Sora',sans-serif;font-size:14px;font-weight:600;color:var(--text);}
+  .quote-role{font-size:12.5px;color:var(--text-faint);}
+  .source-tag{
+    align-self:flex-start;
+    font-family:'IBM Plex Mono',monospace;font-size:11px;
+    padding:3px 9px;border-radius:2px;
+  }
+  .source-tag.li{background:rgba(79,216,196,0.12);color:var(--teal);}
+  .source-tag.uw{background:rgba(255,139,94,0.12);color:var(--coral);}
 
   /* ---------- Achievements ---------- */
   .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
@@ -241,6 +262,7 @@
     .nav-links{display:none;}
     .about-grid,.edu-grid{grid-template-columns:1fr;gap:32px;}
     .skills-grid{grid-template-columns:1fr;}
+    .quote-grid{grid-template-columns:1fr;}
     .stat-grid{grid-template-columns:repeat(2,1fr);}
     .contact-panel{grid-template-columns:1fr;padding:30px 24px;}
     section{padding:56px 0;}
@@ -261,6 +283,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -439,6 +462,74 @@
     </div>
   </section>
 
+  <section id="testimonials">
+    <div class="wrap-wide">
+      <div class="section-head">
+        <h2>What people say</h2>
+        <p class="section-sub">From LinkedIn recommendations and Upwork project reviews — verify these on <a href="https://www.linkedin.com/in/udaya-sai-chikka" target="_blank" rel="noopener" class="inline-link">LinkedIn</a> or <a href="https://www.upwork.com/freelancers/~01fda1ea4f8b3416fb" target="_blank" rel="noopener" class="inline-link">Upwork</a>.</p>
+      </div>
+      <div class="quote-grid">
+
+        <div class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">Uday is one of the best AI engineers out there! His experience with Python, AI chatbots, the RASA framework, and general AI/ML principles is stellar. He's the core engineer behind the Landslo chatbot and was instrumental in getting it to work across various verticals.</p>
+          <div class="quote-who"><span class="quote-name">Arvind Mohan</span><span class="quote-role">SVP &amp; CTO · managed Udaya directly</span></div>
+          <span class="source-tag li">LinkedIn</span>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">Uday is a superstar developer with a unique blend of skills. His communication is top-notch, making it easy to collaborate effectively — from DevOps to UI development, his technical expertise is truly impressive, and he writes clean, clear code.</p>
+          <div class="quote-who"><span class="quote-name">Chris Smyth</span><span class="quote-role">AI Engineer · managed Udaya directly</span></div>
+          <span class="source-tag li">LinkedIn</span>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">Udaya is one of the most talented NLP developers I worked with. His resourcefulness, commitment, and professionalism are notable. I would recommend Udaya for your next project without hesitation.</p>
+          <div class="quote-who"><span class="quote-name">Ariel Navon</span><span class="quote-role">NVIDIA EMEA · Head of Content, Social &amp; Influencer Marketing</span></div>
+          <span class="source-tag li">LinkedIn</span>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">Got help with building a conversational AI. Udaya was very professional and knowledgeable.</p>
+          <div class="quote-who"><span class="quote-name">Erik Falkeskog</span><span class="quote-role">Co-founder, Peach AB</span></div>
+          <span class="source-tag li">LinkedIn</span>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">Uday is a true expert! He did a super complex project for me on Rasa and showed superior knowledge — not only in Rasa but NLP more broadly. If you seek a professional Rasa developer, Uday is your man.</p>
+          <div class="quote-who"><span class="quote-name">RASA &amp; full-stack developer project</span><span class="quote-role">Client review</span></div>
+          <span class="source-tag uw">★ 5.0 Upwork</span>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">Udaya is extremely knowledgeable about RASA — he was able to unblock my work in a matter of minutes. I won't hesitate to hire him again.</p>
+          <div class="quote-who"><span class="quote-name">Rasa chatbot + REST API project</span><span class="quote-role">Client review</span></div>
+          <span class="source-tag uw">★ 5.0 Upwork</span>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">Udaya is one of the most technically competent and professional developers we've worked with here on Upwork. Looking forward to working with him again.</p>
+          <div class="quote-who"><span class="quote-name">Expert RASA developer search</span><span class="quote-role">Client review</span></div>
+          <span class="source-tag uw">★ 5.0 Upwork</span>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">Udaya helped me deploy my chatbot to GCP very quickly. He was available the same day and we finished within two hours, which I really needed. I can recommend him to others.</p>
+          <div class="quote-who"><span class="quote-name">Rasa → GCP deployment via Docker</span><span class="quote-role">Client review</span></div>
+          <span class="source-tag uw">★ 5.0 Upwork</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <section id="education">
     <div class="wrap">
       <div class="section-head">
@@ -472,6 +563,7 @@
           <a href="mailto:udayasaichikka@gmail.com"><span class="k">EMAIL</span> udayasaichikka@gmail.com</a>
           <a href="tel:+919000607099"><span class="k">PHONE</span> +91 9000607099</a>
           <a href="https://linkedin.com/in/udaya-sai-chikka" target="_blank" rel="noopener"><span class="k">LINKEDIN</span> /in/udaya-sai-chikka</a>
+          <a href="https://www.upwork.com/freelancers/~01fda1ea4f8b3416fb" target="_blank" rel="noopener"><span class="k">UPWORK</span> View profile &amp; reviews</a>
         </div>
       </div>
     </div>
